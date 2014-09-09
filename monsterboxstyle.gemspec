@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.version     = Monsterboxstyle::VERSION
   s.authors     = ["Bryan Feller"]
   s.email       = ["bryan@monsterboxpro.com"]
-  s.homepage    = "monsterboxpro.com"
+  s.homepage    = "http://www.monsterboxpro.com"
   s.summary     = "Summary of Monsterboxstyle."
   s.description = "Description of Monsterboxstyle."
 
