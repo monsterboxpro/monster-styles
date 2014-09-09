@@ -2,7 +2,7 @@ module Monsterboxstyle
   class << self
     # Inspired by Kaminari
     def load!
-      register_compass_extension if compass?
+      #register_compass_extension if compass?
 
       if rails?
         register_rails_engine
