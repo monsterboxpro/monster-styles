@@ -9,9 +9,9 @@ Gem::Specification.new do |s|
   s.version     = Monsterboxstyle::VERSION
   s.authors     = ["Bryan Feller"]
   s.email       = ["bryan@monsterboxpro.com"]
-  s.homepage    = "TODO: monsterboxpro.com"
-  s.summary     = "TODO: Summary of Monsterboxstyle."
-  s.description = "TODO: Description of Monsterboxstyle."
+  s.homepage    = "monsterboxpro.com"
+  s.summary     = "Summary of Monsterboxstyle."
+  s.description = "Description of Monsterboxstyle."
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.test_files = Dir["test/**/*"]
