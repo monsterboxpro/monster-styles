@@ -7,8 +7,8 @@ require "monsterboxstyle/version"
 Gem::Specification.new do |s|
   s.name        = "monsterboxstyle"
   s.version     = Monsterboxstyle::VERSION
-  s.authors     = ["TODO: Bryan Feller"]
-  s.email       = ["TODO: bryan@monsterboxpro.com"]
+  s.authors     = ["Bryan Feller"]
+  s.email       = ["bryan@monsterboxpro.com"]
   s.homepage    = "TODO: monsterboxpro.com"
   s.summary     = "TODO: Summary of Monsterboxstyle."
   s.description = "TODO: Description of Monsterboxstyle."
