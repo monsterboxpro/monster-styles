@@ -4,9 +4,9 @@ module Monsterboxstyle
     def load!
       #register_compass_extension if compass?
 
-      if rails?
-        register_rails_engine
-      end
+      #if rails?
+        #register_rails_engine
+      #end
 
       configure_sass
     end
@@ -64,9 +64,9 @@ module Monsterboxstyle
           #:templates_directory   => File.join(gem_path, 'templates')
       #)
     #end
-    def register_rails_engine
-      require 'bootstrap-sass/engine'
-    end
+    #def register_rails_engine
+      #require 'bootstrap-sass/engine'
+    #end
   end
 end
 
