@@ -1,4 +1,4 @@
-module Monsterboxstyle
+module MonsterStyles
   class << self
     def load!
       configure_sass
@@ -37,4 +37,4 @@ module Monsterboxstyle
   end
 end
 
-Monsterboxstyle.load!
+MonsterStyles.load!

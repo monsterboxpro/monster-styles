@@ -5,13 +5,13 @@ require "monsterboxstyle/version"
 
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
-  s.name        = "monsterboxstyle"
-  s.version     = Monsterboxstyle::VERSION
-  s.authors     = ["Bryan Feller"]
+  s.name        = "monster-styles"
+  s.version     = MonsterStyles::VERSION
+  s.authors     = ["Monsterbox Productions"]
   s.email       = ["bryan@monsterboxpro.com"]
   s.homepage    = "http://www.monsterboxpro.com"
-  s.summary     = "Summary of Monsterboxstyle."
-  s.description = "Description of Monsterboxstyle."
+  s.summary     = 'Styling Framework'
+  s.description = 'Styling Framework'
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.test_files = Dir["test/**/*"]
