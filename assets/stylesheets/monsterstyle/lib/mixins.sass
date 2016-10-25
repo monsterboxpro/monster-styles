@@ -1,0 +1,101 @@
+=box-sizing($sizing)
+  :-webkit-box-sizing $sizing
+  :-moz-box-sizing $sizing
+  :box-sizing $sizing
+
+=border-radius($radius)
+  :-webkit-border-radius $radius
+  :-moz-border-radius $radius
+  :border-radius $radius
+
+=border-bottom-left-radius($radius)
+  :-webkit-border-bottom-left-radius $radius
+  :-moz-border-bottom-left-radius $radius
+  :border-bottom-left-radius $radius
+
+=border-top-left-radius($radius)
+  :-webkit-border-top-left-radius $radius
+  :-moz-border-top-left-radius $radius
+  :border-top-left-radius $radius
+
+=border-bottom-right-radius($radius)
+  :-webkit-border-bottom-right-radius $radius
+  :-moz-border-bottom-right-radius $radius
+  :border-bottom-right-radius $radius
+
+=border-top-right-radius($radius)
+  :-webkit-border-top-right-radius $radius
+  :-moz-border-top-right-radius $radius
+  :border-top-right-radius $radius
+
+=border-left-radius($radius)
+  +border-bottom-left-radius($radius)
+  +border-top-left-radius($radius)
+
+=border-right-radius($radius)
+  +border-bottom-right-radius($radius)
+  +border-top-right-radius($radius)
+
+=border-top-radius($radius)
+  +border-top-right-radius($radius)
+  +border-top-left-radius($radius)
+
+=border-bottom-radius($radius)
+  +border-bottom-right-radius($radius)
+  +border-bottom-left-radius($radius)
+
+=transition($transitions...)
+  :-webkit-transition $transitions
+  :-moz-transition $transitions
+  :-ms-transition $transitions
+  :-o-transition $transitions
+  :transition $transitions
+
+=box-shadow($shadows...)
+  :-webkit-box-shadow $shadows
+  :-moz-box-shadow $shadows
+  :-o-box-shadow $shadows
+  :box-shadow $shadows
+
+=transform($transform...)
+  :-webkit-transform $transform
+  :-ms-transform $transform
+  :transform $transform
+
+=transform-origin($transform...)
+  :-webkit-transform-origin $transform
+  :-moz-transform-origin  $transform
+  :-ms-transform-origin $transform
+  :-o-transform-origin $transform
+  :transform-origin $transform
+
+=text-shadow($transform...)
+  :text-shadow $transform
+
+=animation($animate...)
+  $max: length($animate)
+  $animations: ''
+
+  @for $i from 1 through $max
+    $animations: #{$animations + nth($animate, $i)}
+    @if $i < $max
+      $animations: #{$animations + ", "}
+
+  -webkit-animation: $animations
+  -moz-animation:    $animations
+  -o-animation:      $animations
+  animation:         $animations
+
+
+=keyframes($animationName)
+  @-webkit-keyframes #{$animationName}
+    @content
+
+  @-moz-keyframes #{$animationName}
+    @content
+
+  @-o-keyframes #{$animationName}
+    @content
+
+  @keyframes #{$animationName}
+    @content
